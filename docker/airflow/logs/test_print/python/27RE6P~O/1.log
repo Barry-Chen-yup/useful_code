@@ -1,0 +1,32 @@
+[2022-02-08 02:45:28,905] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.python manual__2022-02-08T02:45:19.608438+00:00 [queued]>
+[2022-02-08 02:45:29,161] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.python manual__2022-02-08T02:45:19.608438+00:00 [queued]>
+[2022-02-08 02:45:29,161] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 02:45:29,161] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-08 02:45:29,161] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 02:45:29,524] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): python> on 2022-02-08 02:45:19.608438+00:00
+[2022-02-08 02:45:29,527] {standard_task_runner.py:52} INFO - Started process 18146 to run task
+[2022-02-08 02:45:29,535] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'test_print', 'python', 'manual__2022-02-08T02:45:19.608438+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpdtha74u3', '--error-file', '/tmp/tmpu707eeg5']
+[2022-02-08 02:45:29,536] {standard_task_runner.py:77} INFO - Job 18: Subtask python
+[2022-02-08 02:45:30,686] {logging_mixin.py:109} INFO - Running <TaskInstance: test_print.python manual__2022-02-08T02:45:19.608438+00:00 [running]> on host workspace-1-v1-5d989644d9-ns2w7
+[2022-02-08 02:45:31,497] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 02:45:31,651] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 02:45:31,967] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2022-02-08 02:45:31,986] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:159 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 02:45:32,184] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=akj00173@gmail.com
+AIRFLOW_CTX_DAG_OWNER=someone
+AIRFLOW_CTX_DAG_ID=test_print
+AIRFLOW_CTX_TASK_ID=python
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-08T02:45:19.608438+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-08T02:45:19.608438+00:00
+[2022-02-08 02:45:32,211] {logging_mixin.py:109} INFO - start calculate
+[2022-02-08 02:45:35,321] {logging_mixin.py:109} INFO - return number 256
+[2022-02-08 02:45:35,327] {logging_mixin.py:109} INFO - Total time 3.1166908740997314
+[2022-02-08 02:45:35,328] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-08 02:45:35,533] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=test_print, task_id=python, execution_date=20220208T024519, start_date=20220208T024528, end_date=20220208T024535
+[2022-02-08 02:45:35,890] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-08 02:45:36,570] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-08 02:45:36,573] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2022-02-08 02:45:36,575] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)

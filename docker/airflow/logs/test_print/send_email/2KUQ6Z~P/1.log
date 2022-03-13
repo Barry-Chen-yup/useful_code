@@ -1,0 +1,32 @@
+[2022-02-07 17:03:36,782] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.send_email manual__2022-02-07T17:02:11.423102+00:00 [queued]>
+[2022-02-07 17:03:37,059] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.send_email manual__2022-02-07T17:02:11.423102+00:00 [queued]>
+[2022-02-07 17:03:37,059] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 17:03:37,059] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-07 17:03:37,059] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 17:03:37,392] {taskinstance.py:1259} INFO - Executing <Task(EmailOperator): send_email> on 2022-02-07 17:02:11.423102+00:00
+[2022-02-07 17:03:37,396] {standard_task_runner.py:52} INFO - Started process 1017 to run task
+[2022-02-07 17:03:37,403] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'test_print', 'send_email', 'manual__2022-02-07T17:02:11.423102+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpr0yqybup', '--error-file', '/tmp/tmper7jj8vf']
+[2022-02-07 17:03:37,404] {standard_task_runner.py:77} INFO - Job 5: Subtask send_email
+[2022-02-07 17:03:38,291] {logging_mixin.py:109} INFO - Running <TaskInstance: test_print.send_email manual__2022-02-07T17:02:11.423102+00:00 [running]> on host workspace-1-v1-5d989644d9-ns2w7
+[2022-02-07 17:03:39,024] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-07 17:03:39,145] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-02-07 17:03:39,165] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-07 17:03:39,512] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2022-02-07 17:03:39,533] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:159 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-07 17:03:39,764] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=akj00173@gmail.com
+AIRFLOW_CTX_DAG_OWNER=someone
+AIRFLOW_CTX_DAG_ID=test_print
+AIRFLOW_CTX_TASK_ID=send_email
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-07T17:02:11.423102+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-07T17:02:11.423102+00:00
+[2022-02-07 17:03:39,955] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/email.py:102 PendingDeprecationWarning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2022-02-07 17:03:39,956] {email.py:208} INFO - Email alerting: attempt 1
+[2022-02-07 17:03:40,552] {email.py:220} INFO - Sent an alert email to ['akj00173@gmail.com']
+[2022-02-07 17:03:42,095] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=test_print, task_id=send_email, execution_date=20220207T170211, start_date=20220207T170336, end_date=20220207T170342
+[2022-02-07 17:03:42,958] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-07 17:03:43,406] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-02-07 17:03:43,410] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2022-02-07 17:03:43,412] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)

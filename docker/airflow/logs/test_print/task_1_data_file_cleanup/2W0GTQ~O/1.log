@@ -1,0 +1,1739 @@
+[2022-02-12 00:00:08,142] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.task_1_data_file_cleanup scheduled__2022-02-11T00:00:00+00:00 [queued]>
+[2022-02-12 00:00:08,346] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.task_1_data_file_cleanup scheduled__2022-02-11T00:00:00+00:00 [queued]>
+[2022-02-12 00:00:08,346] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-12 00:00:08,346] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-12 00:00:08,346] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-12 00:00:08,624] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): task_1_data_file_cleanup> on 2022-02-11 00:00:00+00:00
+[2022-02-12 00:00:08,629] {standard_task_runner.py:52} INFO - Started process 4283 to run task
+[2022-02-12 00:00:08,634] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'test_print', 'task_1_data_file_cleanup', 'scheduled__2022-02-11T00:00:00+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpd0w4swxo', '--error-file', '/tmp/tmp4bvm67pt']
+[2022-02-12 00:00:08,636] {standard_task_runner.py:77} INFO - Job 47: Subtask task_1_data_file_cleanup
+[2022-02-12 00:00:09,139] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dagrun.py:466 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-12 00:00:09,264] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dagrun.py:466 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-12 00:00:09,396] {logging_mixin.py:109} INFO - Running <TaskInstance: test_print.task_1_data_file_cleanup scheduled__2022-02-11T00:00:00+00:00 [running]> on host workspace-1-v1-57c59dfd9c-lcldg
+[2022-02-12 00:00:09,758] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dagrun.py:466 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-12 00:00:09,895] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dagrun.py:466 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-12 00:00:10,005] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-12 00:00:10,118] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-12 00:00:10,374] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2022-02-12 00:00:10,390] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:159 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-12 00:00:10,547] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=akj00173@gmail.com
+AIRFLOW_CTX_DAG_OWNER=someone
+AIRFLOW_CTX_DAG_ID=test_print
+AIRFLOW_CTX_TASK_ID=task_1_data_file_cleanup
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-11T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-11T00:00:00+00:00
+[2022-02-12 00:00:10,549] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-12 00:00:10,550] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'python3 /workspace/tracker/code/track_chicken_date_gpu.py "/workspace/nas-data/Animal/chicken_video/"$(date -d "yesterday" +%Y%m%d)']
+[2022-02-12 00:00:10,577] {subprocess.py:85} INFO - Output:
+[2022-02-12 00:32:43,360] {subprocess.py:89} INFO - [INFO] loading YOLO from disk...
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - v 20220211
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - First Connect fail!
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - First Connect success!
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - rpi5
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - 2nd Connect success!
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-00-02.avi
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - Code time 82.12370920181274
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - Model predict fps:  24.33242692046227
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - 34.513319739701934 1.2944851623496723 34.690867970414914 0.027953684212633084 1471
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-06-35.avi
+[2022-02-12 00:32:43,366] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - Code time 77.23221349716187
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - Model predict fps:  23.40817740817741
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - 28.022359317290185 1.31109078827609 26.688433203394784 0.026866398366337918 1443
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-13-08.avi
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - Code time 76.0323703289032
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - Model predict fps:  24.14541695382495
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - 40.366775573301 1.2988087448073249 43.30534462810235 0.02868809871896565 1451
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-19-41.avi
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,367] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - Code time 73.6322431564331
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - Model predict fps:  24.737134909596662
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - 46.04962757512517 1.2865162837969668 49.36388972052894 0.04110570902679114 1438
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-26-14.avi
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - Code time 72.61334657669067
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - Model predict fps:  25.312198483804274
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - 40.609852273136234 1.285546185413807 47.32426953013034 0.039640975888717365 1451
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-32-47.avi
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,368] {subprocess.py:89} INFO - Code time 74.8675901889801
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - Model predict fps:  24.474191328286306
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - 36.99136804707542 1.3167638791542393 39.80283103112682 0.03570150249225416 1453
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-39-20.avi
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - Code time 80.75062322616577
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - Model predict fps:  22.55639614855571
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - 50.17455362404872 1.337710572540107 51.82102808189691 0.033989539122535474 1454
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-45-53.avi
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,369] {subprocess.py:89} INFO - Code time 87.34117245674133
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - Model predict fps:  20.834468664850135
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - 45.473066841729114 1.3510598924692334 45.90899312117371 0.03146740611191838 1468
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-52-26.avi
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - Code time 80.89952445030212
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - Model predict fps:  22.1353226925746
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - 49.03106514471178 1.3333219206574327 48.78267064551974 0.027332593410500643 1441
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/06-59-00.avi
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - Code time 78.53715395927429
+[2022-02-12 00:32:43,370] {subprocess.py:89} INFO - Model predict fps:  22.926337734537874
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - 51.750475491651706 1.2993796218919906 52.501761668121176 0.03837790312227794 1439
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-05-33.avi
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - Code time 75.95278096199036
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - Model predict fps:  23.819318971507993
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - 61.81253341649203 1.2773495940986999 60.408987403692535 0.03421043984132787 1439
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-12-06.avi
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - Code time 65.70423817634583
+[2022-02-12 00:32:43,371] {subprocess.py:89} INFO - Model predict fps:  28.12752613240418
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - 83.3527809420854 1.2404026564039634 71.07297487521215 0.06217362115181954 1435
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-18-39.avi
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - Code time 60.75465536117554
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - Model predict fps:  31.162310866574966
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - 66.73306422075257 1.2128086514760936 60.87862762489898 0.05565594052477455 1454
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-25-12.avi
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,372] {subprocess.py:89} INFO - Code time 63.056631088256836
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - Model predict fps:  29.798209366391184
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - 83.12129346811219 1.2519297091706674 70.71321147146735 0.041484712235263836 1452
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-31-45.avi
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - Code time 65.093101978302
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - Model predict fps:  28.695922598479612
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - 72.53176374715422 1.255413451871862 61.50983914939946 0.06235015161979085 1447
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-38-18.avi
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,373] {subprocess.py:89} INFO - Code time 67.46229434013367
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - Model predict fps:  27.690672153635116
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - 61.6937153234802 1.2787856069227124 57.56965838429468 0.044350240564155444 1458
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-44-51.avi
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - Code time 69.43431067466736
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - Model predict fps:  26.571527297857635
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - 67.07761652921238 1.2964082838702695 65.41092515000437 0.03317802263096273 1447
+[2022-02-12 00:32:43,374] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-51-24.avi
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - Code time 71.34417223930359
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - Model predict fps:  25.822314049586776
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - 74.08715334510539 1.290118664214629 69.8549438595265 0.047728879607935565 1452
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/07-57-57.avi
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,375] {subprocess.py:89} INFO - Code time 70.55486607551575
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Model predict fps:  25.941094941094942
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 62.21024217315154 1.2941013791742968 60.46469306539727 0.03941651962022406 1443
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-04-30.avi
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Code time 77.71731877326965
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Model predict fps:  23.35131396957123
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 75.17915196759637 1.328246112686856 66.55571632604493 0.029748398313909352 1446
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-11-03.avi
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Code time 69.94176197052002
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Model predict fps:  26.26546212647672
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 95.6048579660425 1.3302286339614662 69.64524173390618 0.04246926035716319 1439
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-17-37.avi
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Code time 62.862202644348145
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Model predict fps:  29.70303867403315
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 57.6137421623797 1.2865417668969827 54.042163154237386 0.037443653072383155 1448
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-24-10.avi
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,376] {subprocess.py:89} INFO - Code time 67.29434251785278
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Model predict fps:  27.630193905817176
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 60.75916993110836 1.3207562205573966 58.827823838635844 0.045140825735775436 1444
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-30-43.avi
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Code time 73.95412492752075
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Model predict fps:  24.521527777777777
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 61.29924210081764 1.3324201640436004 58.61961129170787 0.044230933103637106 1440
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-37-16.avi
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Code time 70.14373922348022
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Model predict fps:  26.526315789473685
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 58.67734020886247 1.290100326465585 57.29122117890129 0.04471016363673675 1463
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-43-49.avi
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Code time 65.64685702323914
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Model predict fps:  28.176880222841227
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 57.59145202013514 1.2948404585473046 56.702817295311284 0.04888093119209948 1436
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-50-22.avi
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 00:32:43,377] {subprocess.py:89} INFO - Code time 64.38391041755676
+[2022-02-12 00:32:43,378] {subprocess.py:89} INFO - Model predict fps:  28.952282157676347
+[2022-02-12 01:02:27,991] {subprocess.py:89} INFO - 50.083043098034736 1.2529880995720393 54.182848028033895 0.03818316679169648 1446
+[2022-02-12 01:02:27,997] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:27,997] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/08-56-55.avi
+[2022-02-12 01:02:27,997] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - Code time 68.34323072433472
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - Model predict fps:  26.868512110726645
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - 64.03984097637904 1.2803067262206034 64.72332759450669 0.0361754514352643 1445
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-03-28.avi
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - Code time 70.8318738937378
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - Model predict fps:  25.94248094248094
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - 82.73448565695718 1.2960813867267957 71.68315084640851 0.04558426724988591 1443
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-10-01.avi
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - Code time 60.8997905254364
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - Model predict fps:  31.03848797250859
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - 61.544465440490534 1.2604385342426587 61.566617716473566 0.041828431459447694 1455
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-16-34.avi
+[2022-02-12 01:02:27,998] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Code time 63.74797487258911
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Model predict fps:  29.49412577747063
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 70.0919203092432 1.261192890364466 66.37826482070906 0.060856154291196354 1447
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-23-07.avi
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Code time 69.6843011379242
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Model predict fps:  26.42432619212163
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 48.71275718700854 1.2877868469857214 54.234272544996806 0.03156979601107946 1447
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-29-40.avi
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Code time 63.50511145591736
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Model predict fps:  29.251733703190013
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 41.25061749625008 1.2844626568493236 46.941811363997246 0.028569427612750102 1442
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-36-14.avi
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Code time 66.8351891040802
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - Model predict fps:  28.11309115832762
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 50.9552574006626 1.2377357873632535 54.38130393799844 0.05222717186481742 1459
+[2022-02-12 01:02:27,999] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-42-47.avi
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - Code time 62.73068714141846
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - Model predict fps:  29.47905027932961
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - 55.41720627771932 1.2341677653612795 55.3111646130157 0.06123311095833239 1432
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-49-20.avi
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - Code time 68.33450365066528
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - Model predict fps:  26.52805049088359
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - 48.92998068059223 1.29043464022606 53.136909081737016 0.0338416173066142 1426
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/09-55-53.avi
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - Code time 68.5807614326477
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - Model predict fps:  26.376223776223775
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - 34.814997548525994 1.2507417852698144 42.95270871612884 0.041627543487285805 1430
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,000] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-02-26.avi
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - Code time 70.35425162315369
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - Model predict fps:  26.15760495526497
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - 36.13903752876877 1.3109918883979306 40.41484655393326 0.022677437620243473 1453
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-08-59.avi
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - Code time 72.85934543609619
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - Model predict fps:  24.896742896742897
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - 25.10522063203679 1.2972754124474324 27.63284589577309 0.02622438513192743 1443
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-15-32.avi
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - Code time 72.76854944229126
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - Model predict fps:  24.91111111111111
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - 35.753731847794384 1.3284899365205616 43.16478604897349 0.033060778939140674 1440
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-22-05.avi
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,001] {subprocess.py:89} INFO - Code time 64.42403626441956
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - Model predict fps:  29.0474879559532
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - 47.57072868531398 1.2375108229084815 54.51955250297295 0.06022982647643032 1453
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-28-38.avi
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - Code time 65.07707071304321
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - Model predict fps:  28.40943789035392
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - 42.65040537692863 1.2487354189583562 51.340920499644085 0.046437608457173214 1441
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-35-11.avi
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - Code time 67.83076667785645
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - Model predict fps:  27.12033195020747
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - 38.58801274824969 1.2442630916410673 42.46844280603194 0.022792757104404832 1446
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-41-45.avi
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,002] {subprocess.py:89} INFO - Code time 71.00841021537781
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - Model predict fps:  25.706045865184155
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 79.69068669827398 1.2957284749555116 78.31713000552328 0.03761080661065784 1439
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-48-18.avi
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - Code time 74.59335279464722
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - Model predict fps:  24.52726017943409
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 73.4556395636224 1.3053296436258717 68.32594792254439 0.05258373177994734 1449
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/10-54-51.avi
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - Code time 63.462454080581665
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - Model predict fps:  29.614804660726524
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 57.04163812964697 1.1593913557004567 53.347864604404535 0.05073269100067906 1459
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-01-24.avi
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - Code time 62.07311010360718
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - Model predict fps:  30.75170068027211
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 52.84592855380775 1.1497844606932233 51.99851125736161 0.043580953383414174 1470
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-07-57.avi
+[2022-02-12 01:02:28,003] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Code time 60.31419253349304
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Model predict fps:  31.749150237933378
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 40.11870963035248 1.1886612750404517 43.57838385039554 0.036429683658751974 1471
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-14-30.avi
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Code time 54.406362533569336
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Model predict fps:  34.801814375436145
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 54.09171193887547 1.1660374161828808 51.360139303186735 0.06714315430710734 1433
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-21-03.avi
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Code time 54.55656862258911
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Model predict fps:  35.05666897028335
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 58.964871981241906 1.1818722230900365 59.65810767002136 0.04964196472894737 1447
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-27-36.avi
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Code time 59.53219747543335
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - Model predict fps:  31.60374739764053
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 78.90934437689604 1.2585703198296467 71.68501033291189 0.04174088159351262 1441
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,004] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-34-09.avi
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - Code time 65.57073092460632
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - Model predict fps:  28.514940931202222
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - 61.49222172956551 1.2654213779792862 64.28326674832984 0.046069037097374116 1439
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-40-42.avi
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - Code time 70.5482976436615
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - Model predict fps:  25.92852185981957
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - 59.03521363588242 1.280470561333672 64.8569569856466 0.03491936735221048 1441
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-47-15.avi
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - Code time 70.56123399734497
+[2022-02-12 01:02:28,005] {subprocess.py:89} INFO - Model predict fps:  26.002764340013822
+[2022-02-12 01:31:38,559] {subprocess.py:89} INFO - 36.08427999744799 1.2854526452720947 41.84799502431715 0.03108238052332871 1447
+[2022-02-12 01:31:38,563] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,563] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/11-53-48.avi
+[2022-02-12 01:31:38,563] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,563] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - Code time 73.47413229942322
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - Model predict fps:  24.631688672689368
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - 33.34030307327818 1.3262883655942774 32.07124859041039 0.03697294769116185 1439
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-00-22.avi
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - Code time 75.42368674278259
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - Model predict fps:  24.029737206085755
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - 32.95069773285426 1.3300290388600091 37.578636769649954 0.02781045731703415 1446
+[2022-02-12 01:31:38,564] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-06-55.avi
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - Code time 79.77923941612244
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - Model predict fps:  22.453027139874738
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - 45.439751764962615 1.3624433044062942 45.4983524593187 0.02541009926006042 1437
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-13-28.avi
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - Code time 76.2279806137085
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - Model predict fps:  24.41481994459834
+[2022-02-12 01:31:38,565] {subprocess.py:89} INFO - 55.110654522081795 1.3486990545739141 54.089087133013095 0.049694709491151366 1444
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-20-01.avi
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - Code time 58.43049764633179
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - Model predict fps:  32.46116504854369
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - 89.78526805587198 1.3161847140473761 72.47403404106815 0.05767272869089184 1442
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-26-34.avi
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - Code time 54.18842053413391
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - Model predict fps:  35.390344827586205
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - 66.63859984312269 1.2351169025445707 59.138401327505704 0.06716502011589318 1450
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-33-07.avi
+[2022-02-12 01:31:38,566] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - Code time 51.59448742866516
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - Model predict fps:  37.206559665038384
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - 51.423720379884195 1.1781353245898711 48.855122406750084 0.05188693959348822 1433
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-39-40.avi
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - Code time 54.60350155830383
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - Model predict fps:  35.43381843381843
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - 56.097995092814514 1.2307865099289756 52.93668885909555 0.0460066846844299 1443
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,567] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-46-13.avi
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - Code time 52.903958797454834
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - Model predict fps:  36.97945205479452
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - 69.06984289790725 1.2072779542090608 60.29025118583696 0.06562860293792387 1460
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-52-46.avi
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - Code time 50.155065298080444
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - Model predict fps:  38.220670391061454
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - 57.35751704073349 1.1941153706695873 57.65667684946552 0.0548998108826445 1432
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/12-59-19.avi
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - Code time 52.34258151054382
+[2022-02-12 01:31:38,568] {subprocess.py:89} INFO - Model predict fps:  37.089285714285715
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - 67.25956084855304 1.2072518429096442 61.171110490544876 0.07884390161256939 1456
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-05-52.avi
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - Code time 53.083282709121704
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - Model predict fps:  36.514089347079036
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - 88.89591673546911 1.1641925106631792 71.56687752681646 0.06568205852119322 1455
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-12-25.avi
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - Code time 52.82609724998474
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - Model predict fps:  36.74484181568088
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - 66.3529293722202 1.1762377597290739 66.80949714431091 0.06024820009066935 1454
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-18-58.avi
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,569] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - Code time 64.68623471260071
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - Model predict fps:  29.158544955387782
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - 99.71785311074493 1.2746260934313671 84.36066591029936 0.060594378253298185 1457
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-25-31.avi
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - Code time 77.65026712417603
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - Model predict fps:  24.088704088704088
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - 112.21426743330146 1.3460830865793783 78.20442367367394 0.058329218790614215 1443
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-32-04.avi
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - Code time 50.87792086601257
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - Model predict fps:  38.69678302532512
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - 72.98039357801383 1.2282876388633346 69.06156819529112 0.060633997291402654 1461
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-38-38.avi
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,570] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - Code time 53.53026461601257
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - Model predict fps:  35.56372549019608
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - 83.68655678483401 1.243928474694045 77.80466377230297 0.06496303537402712 1428
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-45-11.avi
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - Code time 67.15228152275085
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - Model predict fps:  27.86726272352132
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - 74.69078019389644 1.2423843115302198 70.78797064003835 0.043195773785017856 1454
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-51-44.avi
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - Code time 68.22640562057495
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - Model predict fps:  26.850798056904928
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - 42.95002601166138 1.21921217699107 45.21623275927731 0.03411007730025055 1441
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/13-58-17.avi
+[2022-02-12 01:31:38,571] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - Code time 71.51468968391418
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - Model predict fps:  25.5124826629681
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - 30.089611189527318 1.2526533007059362 37.392952407426726 0.03782284249314035 1442
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-04-50.avi
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - Code time 73.82311463356018
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - Model predict fps:  24.679806362378976
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - 34.11001684525925 1.3130235184428702 43.35595564641569 0.03935457538773851 1446
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-11-23.avi
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - Code time 73.12422037124634
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - Model predict fps:  24.886426592797783
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - 31.344238986780567 1.3447317285390532 36.59855396883216 0.024285819208696654 1444
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,572] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-17-56.avi
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - Code time 75.85660767555237
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - Model predict fps:  24.035075653370015
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - 34.48443799986097 1.3548909873336918 36.08099776627335 0.029108181068509664 1454
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-24-29.avi
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - Code time 78.06838083267212
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - Model predict fps:  23.492150170648465
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - 29.41263504269151 1.330047501081299 28.917476657423997 0.029299627702555172 1465
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-31-02.avi
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - Code time 68.95835900306702
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - Model predict fps:  26.56388888888889
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - 32.65879921120141 1.2629477291771791 33.16541377670923 0.028029643872352815 1440
+[2022-02-12 01:31:38,573] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-37-35.avi
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - Code time 72.44899082183838
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - Model predict fps:  25.376641326883206
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - 35.45701445392107 1.3138807842909972 42.792408581533834 0.026617475778149446 1447
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-44-08.avi
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - Code time 68.48273038864136
+[2022-02-12 01:31:38,574] {subprocess.py:89} INFO - Model predict fps:  26.798050139275766
+[2022-02-12 02:04:16,619] {subprocess.py:89} INFO - 66.83077342528419 1.2719763149109393 64.92148782615836 0.03710009924992927 1436
+[2022-02-12 02:04:16,624] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,624] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-50-42.avi
+[2022-02-12 02:04:16,624] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,624] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - Code time 69.06236410140991
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - Model predict fps:  26.710416666666667
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - 46.453451337030934 1.2674787510324002 53.203206926158174 0.03139482731234456 1440
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/14-57-15.avi
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - Code time 67.53278279304504
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - Model predict fps:  27.33080634045486
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - 42.71450015435511 1.2945121866503158 47.928625541144825 0.02966307909188842 1451
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-03-48.avi
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,625] {subprocess.py:89} INFO - Code time 69.24274110794067
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - Model predict fps:  26.738651994497936
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - 48.98574412438387 1.2885944963082787 51.36389551442254 0.03473236391612897 1454
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-10-21.avi
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - Code time 70.51063895225525
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - Model predict fps:  26.46153846153846
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - 47.147932579638315 1.3184125433111775 51.51038819249515 0.04174676676447829 1469
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-16-54.avi
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,626] {subprocess.py:89} INFO - Code time 72.94819021224976
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - Model predict fps:  24.865505226480835
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - 41.207320331887566 1.318484495527324 43.577425715682715 0.03652815496687039 1435
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-23-27.avi
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - Code time 74.92546582221985
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - Model predict fps:  24.29750346740638
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - 55.64614381822172 1.3366126427318743 50.54874888316533 0.03475125676979899 1442
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-30-00.avi
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - Code time 65.55529308319092
+[2022-02-12 02:04:16,627] {subprocess.py:89} INFO - Model predict fps:  28.105555555555554
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - 38.13393233485071 1.2672954511529113 43.77046981173816 0.04025987435632914 1440
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-36-33.avi
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - Code time 64.17527508735657
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - Model predict fps:  28.592722183344996
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - 45.337787002283484 1.2340558714374628 52.300441095488615 0.035141469965517515 1429
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-43-06.avi
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - Code time 57.45474457740784
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - Model predict fps:  32.57832167832168
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - 45.09310817548168 1.2223422452339885 46.17203101333876 0.05188627288206045 1430
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,628] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-49-39.avi
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - Code time 66.30947065353394
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - Model predict fps:  28.035172413793102
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - 70.00233523463831 1.2785932713917325 68.95551824099884 0.04073924497871831 1450
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/15-56-12.avi
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - Code time 69.20630717277527
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - Model predict fps:  26.666666666666668
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - 44.900851861109786 1.293469015564957 53.525340441668085 0.02820434810997866 1455
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-02-45.avi
+[2022-02-12 02:04:16,629] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - Code time 72.1011745929718
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - Model predict fps:  25.58082191780822
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - 30.617160984072225 1.2772201825103469 37.863965983793356 0.02587303153860457 1460
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-09-18.avi
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - Code time 70.59904217720032
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - Model predict fps:  25.613286713286712
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - 28.098280624354057 1.2989545856222557 32.474253357341304 0.028653357897584462 1430
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-15-52.avi
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - Code time 69.73017311096191
+[2022-02-12 02:04:16,630] {subprocess.py:89} INFO - Model predict fps:  26.424430641821946
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - 30.848692677869003 1.266510431848659 33.82641732631017 0.02375273780788853 1449
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-22-25.avi
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - Code time 70.79403853416443
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - Model predict fps:  25.67338429464906
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - 31.06871068277639 1.2980061507489637 32.882566352257875 0.0321496933033527 1439
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-28-58.avi
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - Code time 69.3676905632019
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - Model predict fps:  26.18658280922432
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - 32.11459920657033 1.3200655811465127 41.48040976601996 0.027425965978546685 1431
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,631] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-35-31.avi
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - Code time 72.52671790122986
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - Model predict fps:  25.00836236933798
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - 79.79595824748749 1.3340739738968448 69.73525769173179 0.04657101764216802 1435
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-42-04.avi
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - Code time 73.95657277107239
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - Model predict fps:  24.66482377332412
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - 64.08721303567161 1.3223070343909875 62.47173754165804 0.03633706222790659 1447
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-48-37.avi
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - Code time 75.63617610931396
+[2022-02-12 02:04:16,632] {subprocess.py:89} INFO - Model predict fps:  23.940277777777776
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - 33.092218662357745 1.341998242801835 32.92097504904766 0.025434478714367454 1440
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/16-55-10.avi
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - Code time 72.94939517974854
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - Model predict fps:  25.00828729281768
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - 35.13970513239531 1.2750471684408453 42.94747589360122 0.030279974616934966 1448
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-01-43.avi
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - Code time 74.64020895957947
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - Model predict fps:  24.668032786885245
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - 37.73727813390542 1.2902056974146523 39.022889495385144 0.035437714705281786 1464
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,633] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-08-16.avi
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - Code time 76.17142820358276
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - Model predict fps:  23.85458304617505
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - 31.660151687802628 1.2827998921934622 37.9420551713088 0.03719076205624336 1451
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-14-49.avi
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - Code time 76.96271705627441
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - Model predict fps:  23.374305555555555
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - 28.637526300761415 1.358658915727683 29.538360919173098 0.024682848869255352 1440
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,634] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-21-22.avi
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - Code time 80.87480640411377
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - Model predict fps:  22.49312242090784
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - 30.17699963373657 1.354792670863259 32.81816591320806 0.03407807113382147 1454
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-27-55.avi
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - Code time 82.89430403709412
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - Model predict fps:  21.803040774015205
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - 29.711196778167928 1.3455433390545617 28.374611189187128 0.02023491575867499 1447
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-34-29.avi
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,635] {subprocess.py:89} INFO - Code time 84.17937397956848
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - Model predict fps:  21.343232044198896
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - 27.73311936099751 1.3566019560683547 26.071640277863207 0.021665121283246793 1448
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-41-02.avi
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - Code time 86.42369532585144
+[2022-02-12 02:04:16,636] {subprocess.py:89} INFO - Model predict fps:  20.92349726775956
+[2022-02-12 02:34:27,192] {subprocess.py:89} INFO - 30.20104836710626 1.3977701758482524 30.050513077587 0.02594201577203722 1464
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-47-35.avi
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - Code time 84.39969563484192
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - Model predict fps:  21.241545893719806
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - 32.55526518160926 1.3501513406108876 31.26655156727106 0.034703220428526 1449
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi5/17-54-08.avi
+[2022-02-12 02:34:27,197] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - Code time 87.07286405563354
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - Model predict fps:  20.75598086124402
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - 33.02009536041207 1.3901330686099758 35.804822232684664 0.024033031107074988 1463
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - rpi7
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - 2nd Connect success!
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-00-03.avi
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - Code time 66.49854159355164
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - Model predict fps:  26.823655913978495
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - 40.01307876381782 1.2660436025872701 44.40519516254359 0.03867128501364218 1395
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,198] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-06-36.avi
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - Code time 69.11542224884033
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - Model predict fps:  25.98303886925795
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - 39.69789442317674 1.270694568921061 44.57768673085175 0.0430363784441772 1415
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-13-09.avi
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - Code time 71.1815710067749
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - Model predict fps:  25.591510090466247
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - 36.970273650943675 1.297003272762396 38.17480446445081 0.02684981910255627 1437
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,199] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-19-42.avi
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - Code time 65.94174265861511
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - Model predict fps:  27.495042492917847
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - 46.10731550829408 1.312441227371272 45.92701145508281 0.036403130656697466 1412
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-26-15.avi
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - Code time 62.93885326385498
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - Model predict fps:  28.701001430615165
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - 48.51863978950098 1.2728746141522846 43.342101803025514 0.041465806419302226 1398
+[2022-02-12 02:34:27,200] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-32-48.avi
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - Code time 62.29472756385803
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - Model predict fps:  28.98567335243553
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - 44.28445215408132 1.204712928149865 48.16903871164702 0.05398112628803698 1396
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-39-22.avi
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - Code time 62.41890358924866
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - Model predict fps:  29.03868194842407
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - 72.4963099108159 1.2801384903789377 69.44200675634526 0.04422064104996592 1396
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,201] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-45-55.avi
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - Code time 62.976563930511475
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - Model predict fps:  28.96175637393768
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - 76.02730896255537 1.3299927571610366 63.703305450549784 0.05141799312316527 1412
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-52-28.avi
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - Code time 59.80903387069702
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - Model predict fps:  30.50854700854701
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - 66.43285406896126 1.3208907483087522 61.3140213085364 0.05367294562205091 1404
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/06-59-01.avi
+[2022-02-12 02:34:27,202] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - Code time 62.66904377937317
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - Model predict fps:  29.07284299858557
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - 63.89121670037027 1.3226714107091426 59.547062721977916 0.04404783478662926 1414
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-05-34.avi
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - Code time 64.74503493309021
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - Model predict fps:  28.13107822410148
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - 72.69480751670753 1.3200223427985054 70.22436298387953 0.03264387279775722 1419
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-12-07.avi
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - Code time 61.54283356666565
+[2022-02-12 02:34:27,203] {subprocess.py:89} INFO - Model predict fps:  29.300789662598707
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 83.41670041731301 1.3027952301452628 68.93525709611633 0.0464421297292467 1393
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-18-40.avi
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - Code time 58.72014880180359
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - Model predict fps:  31.454738330975953
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 59.18607446659393 1.2908947080550677 59.05225475903425 0.04385632092822957 1414
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-25-13.avi
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - Code time 61.59915256500244
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - Model predict fps:  29.61887863733144
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 70.00021258437089 1.28943364765024 66.73385080450532 0.04165994769865525 1409
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-31-46.avi
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - Code time 63.92917537689209
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - Model predict fps:  28.184022824536378
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 74.97123451785552 1.2831244077586281 68.07604701735207 0.06121369720703363 1402
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-38-20.avi
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,204] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Code time 68.71603965759277
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Model predict fps:  25.762041696621136
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 53.44882217509306 1.3222493736188035 55.343548713923944 0.037886091856516396 1391
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-44-53.avi
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Code time 70.17660784721375
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Model predict fps:  25.738396624472575
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 58.04732598616276 1.3204871495726969 57.53545030761334 0.039193951453011557 1422
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-51-26.avi
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Code time 74.89789962768555
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Model predict fps:  23.406719085060757
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 60.89257427776266 1.3555426871689167 55.96170400821756 0.03829626563364251 1399
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/07-57-59.avi
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Code time 67.12544798851013
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - Model predict fps:  26.580414581844174
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 57.22119486037586 1.311698524027568 61.51300156116869 0.034224445349112814 1399
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,205] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-04-32.avi
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Code time 73.46242642402649
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Model predict fps:  24.088005677785663
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 62.66026979154626 1.3369936894687706 63.11974084976095 0.035332275598100815 1409
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-11-05.avi
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Code time 67.73989462852478
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Model predict fps:  26.670949321912918
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 123.36858980117348 1.3520599613418567 79.34752445144574 0.048997627260772676 1401
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-17-38.avi
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Code time 56.481483459472656
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Model predict fps:  32.59045584045584
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 61.574945344751534 1.2783593514491522 60.63321791530372 0.04644546653353959 1404
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-24-11.avi
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Code time 65.32525944709778
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - Model predict fps:  27.669978708303763
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 66.57414906846414 1.3519576166463951 65.99465566596444 0.03514835453251486 1409
+[2022-02-12 02:34:27,206] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-30-44.avi
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - Code time 68.66214346885681
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - Model predict fps:  26.165131112686037
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - 56.732722957416385 1.3354506836481554 57.10742567099598 0.0424599582558801 1411
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-37-17.avi
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - Code time 68.99324822425842
+[2022-02-12 02:34:27,207] {subprocess.py:89} INFO - Model predict fps:  25.624551328068915
+[2022-02-12 03:03:00,359] {subprocess.py:89} INFO - 59.850283074907885 1.3713546856766345 59.69171403423934 0.031755951304813346 1393
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-43-51.avi
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - Code time 71.46791863441467
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - Model predict fps:  24.653543307086615
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - 52.955968056966746 1.3489181401907313 59.64460751190923 0.03241782699957518 1397
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-50-24.avi
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - Code time 69.90872240066528
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - Model predict fps:  25.85744382022472
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - 53.493312024381446 1.353577742236607 48.63629321388534 0.03450967023971307 1424
+[2022-02-12 03:03:00,365] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/08-56-57.avi
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - Code time 57.110745668411255
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - Model predict fps:  32.23934659090909
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - 59.203977117739214 1.2904597777693108 58.792292945184954 0.05517871170894125 1408
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-03-30.avi
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - Code time 61.70446991920471
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - Model predict fps:  29.604535790219703
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - 96.26394456137865 1.3108718648545559 74.81592372879543 0.0499107402920276 1411
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-10-03.avi
+[2022-02-12 03:03:00,366] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - Code time 62.8447322845459
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - Model predict fps:  28.773276474769013
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - 54.22890597043804 1.3145319991865603 58.92938954392425 0.04262650688602606 1407
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-16-36.avi
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - Code time 58.352426290512085
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - Model predict fps:  31.50463954318344
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - 68.3697596165729 1.2666284316369105 65.93211323443255 0.04929715491285579 1401
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-23-09.avi
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,367] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Code time 54.35866832733154
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Model predict fps:  34.00285306704708
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 64.00930183137982 1.2699090332723901 64.08008273510704 0.03517232883823136 1402
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-29-42.avi
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Code time 55.35527682304382
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Model predict fps:  33.596602972399154
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 39.60630893209368 1.2570286078238486 41.55020195857485 0.0705975635693437 1413
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-36-15.avi
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Code time 62.40298914909363
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Model predict fps:  28.935138987883107
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 58.96840939036304 1.2743671767539397 63.01863906371659 0.046328293266680025 1403
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-42-49.avi
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Code time 67.56372618675232
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - Model predict fps:  26.909663865546218
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 43.579601440203696 1.3219056043087067 48.11440107764067 0.028620927992489553 1428
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,368] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-49-22.avi
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Code time 68.1406922340393
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Model predict fps:  26.126780626780626
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 46.05838577770942 1.3978348134243692 56.08656289931238 0.04171194450740233 1404
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/09-55-55.avi
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Code time 69.61210107803345
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Model predict fps:  25.32596291012839
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 37.38875349541012 1.366918024109939 47.539490355009555 0.02533496676826289 1402
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-02-28.avi
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Code time 67.20300269126892
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Model predict fps:  26.367857142857144
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 38.762058022997294 1.3695842479447566 45.50222205980235 0.035876377526294446 1400
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-09-01.avi
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Code time 68.69824266433716
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - Model predict fps:  26.257022471910112
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 34.3096628592461 1.3250550449304987 38.90302264448094 0.038217592590885086 1424
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,369] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-15-34.avi
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Code time 66.91667485237122
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Model predict fps:  26.590421729807005
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 34.95335356002077 1.3434528013789804 45.39566578382643 0.02726826673099392 1399
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-22-07.avi
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Code time 64.1571569442749
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Model predict fps:  27.51482284887925
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 40.95032076103171 1.3212601453406425 48.03153855423969 0.028187424049861024 1383
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-28-40.avi
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Code time 68.77177476882935
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Model predict fps:  26.027581329561528
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 30.95370164698475 1.3344814675385448 36.19202543227051 0.02892079409001473 1414
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-35-13.avi
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Code time 69.42248606681824
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - Model predict fps:  25.987985865724383
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 35.40253294599216 1.318855710037155 39.2915325192423 0.028027137020997663 1415
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-41-47.avi
+[2022-02-12 03:03:00,370] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Code time 64.46910834312439
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Model predict fps:  27.763988522238165
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 73.76587560900442 1.3289964120043503 75.47129378115056 0.0444396627246262 1394
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-48-20.avi
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Code time 61.78577756881714
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Model predict fps:  29.651558073654392
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 86.01474245568492 1.3181072903605484 80.12862196653519 0.03706794595636795 1412
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/10-54-53.avi
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Code time 59.22948956489563
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Model predict fps:  30.859586600142553
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 68.76062043749448 1.2702133397971316 63.601546351742236 0.038564094956293246 1403
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-01-26.avi
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Code time 59.60223650932312
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - Model predict fps:  30.950634696755994
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 40.7849624142554 1.1829912127731341 45.769324323877484 0.03768537259329081 1418
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-07-59.avi
+[2022-02-12 03:03:00,371] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Code time 59.056299448013306
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Model predict fps:  30.82032927702219
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 36.028886361114566 1.2506029243210983 49.037708307612476 0.04427664099248074 1397
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-14-32.avi
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Code time 59.22104573249817
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Model predict fps:  30.710714285714285
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 42.12747573077764 1.2690855684170825 44.76723268928597 0.05355071969193392 1400
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-21-05.avi
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Code time 60.53201198577881
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Model predict fps:  30.056348074179745
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 48.86883271098167 1.2996933597596991 57.97461723664411 0.04600247566841461 1402
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-27-38.avi
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Code time 61.9733989238739
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - Model predict fps:  29.01932712956335
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 67.12877400704151 1.2931148106833055 67.28523876199138 0.05314733414795357 1397
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-34-11.avi
+[2022-02-12 03:03:00,372] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:03:00,373] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:03:00,373] {subprocess.py:89} INFO - Code time 62.14082670211792
+[2022-02-12 03:03:00,373] {subprocess.py:89} INFO - Model predict fps:  29.218104062722738
+[2022-02-12 03:32:55,762] {subprocess.py:89} INFO - 57.635060831675034 1.254136054562843 58.75751995259279 0.04552799092958078 1403
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-40-45.avi
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - Code time 69.4834189414978
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - Model predict fps:  25.506410256410255
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - 60.554414995849584 1.3485929696555996 66.17723348208577 0.030401153941130823 1404
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-47-18.avi
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - Code time 72.61087393760681
+[2022-02-12 03:32:55,768] {subprocess.py:89} INFO - Model predict fps:  24.73006993006993
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - 31.812744767359014 1.3971972572239006 40.1542628035482 0.031201008682913058 1430
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/11-53-51.avi
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - Code time 73.14786577224731
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - Model predict fps:  24.194759206798867
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - 33.289832291737135 1.392949670832187 37.65270559295413 0.023129586692498465 1412
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-00-24.avi
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - Code time 71.62430620193481
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - Model predict fps:  24.50822015725518
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - 33.75284307252137 1.3799930401196046 36.37834427932225 0.030449527947211542 1399
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-06-57.avi
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,769] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Code time 76.83210039138794
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Model predict fps:  22.974285714285713
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 48.75382211568226 1.3839343149570258 48.68725097687013 0.03235332630764559 1400
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-13-30.avi
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Code time 64.55468273162842
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Model predict fps:  27.846098783106658
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 63.646016265945285 1.3490251053814626 60.42341485902727 0.04513928901490168 1397
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-20-03.avi
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Code time 59.39476203918457
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Model predict fps:  30.974504249291783
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 97.59527677753898 1.3046780349599123 83.449727425932 0.0529725858955575 1412
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-26-36.avi
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Code time 61.83091402053833
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - Model predict fps:  29.311743772241993
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 54.07682634918288 1.2912768562300534 59.83657318456184 0.04769992456521798 1405
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-33-09.avi
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,770] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Code time 59.0793571472168
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Model predict fps:  30.553956834532375
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 37.28832430483219 1.2955226314408925 47.80518173525372 0.028179478599333653 1390
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-39-43.avi
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Code time 58.66783356666565
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Model predict fps:  31.160625444207533
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 43.6591829247971 1.24430995393366 45.37895881543934 0.0376126641157445 1407
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-46-16.avi
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Code time 61.75651574134827
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Model predict fps:  29.105225483178238
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 51.000682537807265 1.3218980093329922 60.65062581301749 0.03279860835130664 1397
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-52-49.avi
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Code time 55.641047954559326
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - Model predict fps:  33.20369056068134
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 34.94645716057733 1.178989983115751 39.45957899359201 0.053695854752004765 1409
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/12-59-22.avi
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,771] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Code time 55.17838168144226
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Model predict fps:  33.63662171753016
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 52.45749081150956 1.229186738469899 55.33621362203316 0.041819266018450735 1409
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-05-55.avi
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Code time 55.61711001396179
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Model predict fps:  32.84077809798271
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 70.19310082965708 1.2738661753560119 71.87093480549817 0.040429732929824956 1388
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-12-28.avi
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Code time 59.08623266220093
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Model predict fps:  30.646805455850682
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 60.48120677736985 1.2176988648788056 68.73751810214182 0.04350017371690768 1393
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-19-01.avi
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Code time 58.15382266044617
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Model predict fps:  31.74145299145299
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 97.39221949529217 1.2746533168730814 80.20878961937225 0.062370623247837556 1404
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-25-34.avi
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Code time 76.08577871322632
+[2022-02-12 03:32:55,772] {subprocess.py:89} INFO - Model predict fps:  23.956645344705045
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 126.85512222634225 1.3489932357400403 76.84028651846936 0.06035325848445293 1407
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-32-07.avi
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Code time 58.676783084869385
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Model predict fps:  30.933666191155492
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 54.500381266151294 1.223006541408227 60.597646411825714 0.035189410969436064 1402
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-38-41.avi
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Code time 60.069899559020996
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Model predict fps:  30.421575585521648
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 73.80473613272746 1.2694342006355637 78.94499778578633 0.04311979338250878 1409
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-45-14.avi
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Code time 69.61939263343811
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Model predict fps:  25.265512265512264
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 55.873990706815434 1.3359101734482712 63.31658549578203 0.03284426851200719 1386
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-51-47.avi
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Code time 71.61121773719788
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - Model predict fps:  24.478510028653297
+[2022-02-12 03:32:55,773] {subprocess.py:89} INFO - 44.787200696981 1.3699968391212318 52.562095280649324 0.03363562721091755 1396
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/13-58-20.avi
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Code time 72.87038040161133
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Model predict fps:  23.885529157667385
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 31.609549481546455 1.377815550571648 39.263344767443634 0.03770810596313901 1389
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-04-53.avi
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Code time 73.47702312469482
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Model predict fps:  23.99928774928775
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 30.42121589896573 1.3268264729348322 29.499776156565687 0.03615497518561392 1404
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-11-26.avi
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Code time 74.60361504554749
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Model predict fps:  23.612811387900354
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 31.561908840395358 1.3583891435100772 35.4966216906879 0.030514434191775415 1405
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-17-59.avi
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Code time 75.76810693740845
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - Model predict fps:  23.559154929577463
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 39.88353174215774 1.4080618127565798 47.4455478678587 0.02796602561247842 1420
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,774] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-24-32.avi
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - Code time 74.35193300247192
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - Model predict fps:  23.814002828854314
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - 27.17620537169932 1.4044011131345107 30.929252287353574 0.024341252852993413 1414
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-31-05.avi
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - Code time 74.47979402542114
+[2022-02-12 03:32:55,775] {subprocess.py:89} INFO - Model predict fps:  23.932441942294158
+[2022-02-12 04:03:23,152] {subprocess.py:89} INFO - 32.89253001484193 1.3763305769460008 39.250635982981414 0.02555248607970557 1421
+[2022-02-12 04:03:23,156] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-37-39.avi
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - Code time 74.89661860466003
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - Model predict fps:  23.453314326443337
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - 44.78618400060719 1.4066160509444232 44.2279599848697 0.03808560302661119 1403
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-44-12.avi
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - Code time 71.07224750518799
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - Model predict fps:  25.153900709219858
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - 51.258725993427404 1.3805837855616672 53.62790044588503 0.036018648457083156 1410
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-50-45.avi
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - Code time 75.58161783218384
+[2022-02-12 04:03:23,157] {subprocess.py:89} INFO - Model predict fps:  23.371367824238128
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - 47.811551995716776 1.420293174598626 51.98391473673972 0.02747515477351034 1411
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/14-57-18.avi
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - Code time 74.26462244987488
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - Model predict fps:  23.868794326241133
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - 51.32074425601296 1.400187492195347 57.28978705993065 0.034368316196386126 1410
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-03-51.avi
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - Code time 74.0490972995758
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - Model predict fps:  23.678571428571427
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - 42.68291661170962 1.3795425691725387 47.21416926414219 0.02774323501921531 1400
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-10-24.avi
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,158] {subprocess.py:89} INFO - Code time 79.27390003204346
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - Model predict fps:  21.98931623931624
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - 31.462499130738546 1.4257069197873269 34.0707993978152 0.02095103083284869 1404
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-16-57.avi
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - Code time 77.83062148094177
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - Model predict fps:  22.521306818181817
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - 35.46083089508513 1.4093189684414227 42.20664493609079 0.024992904838279005 1408
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-23-30.avi
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - Code time 73.13478183746338
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - Model predict fps:  23.59767610748003
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - 52.5132006287089 1.3535321632470056 51.788675833946286 0.047631473863497066 1377
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-30-03.avi
+[2022-02-12 04:03:23,159] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - Code time 71.23963761329651
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - Model predict fps:  25.063649222065063
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - 35.02366954454271 1.3915298922783945 38.860139809191416 0.037366961181264105 1414
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-36-37.avi
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - Code time 72.02743363380432
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - Model predict fps:  24.551994301994302
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - 31.64054346097736 1.4026016564440813 36.20191931773468 0.02449424046931966 1404
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-43-10.avi
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - Code time 66.3624529838562
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - Model predict fps:  27.146496815286625
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - 42.91340978714065 1.3062038463481005 51.57379173533065 0.04667854964482394 1413
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-49-43.avi
+[2022-02-12 04:03:23,160] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - Code time 62.17804956436157
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - Model predict fps:  29.44900849858357
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - 70.74873987874466 1.3109670762119408 64.52423108028218 0.0527548382275171 1412
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/15-56-16.avi
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - Code time 60.490113973617554
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - Model predict fps:  30.338287331917904
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - 49.23525135616559 1.2964882389954906 48.132622990713244 0.0424949329717625 1413
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-02-49.avi
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - Code time 56.85226655006409
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - Model predict fps:  32.02729885057471
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - 48.78181369616176 1.2330509682570918 56.792192623464395 0.05956196147199579 1392
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-09-22.avi
+[2022-02-12 04:03:23,161] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - Code time 55.43264698982239
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - Model predict fps:  33.28287135749822
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - 42.00591491256879 1.259625167362779 44.661565761872176 0.03739326350317097 1407
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-15-55.avi
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - Code time 59.08689785003662
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - Model predict fps:  31.27777777777778
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - 32.233410725693055 1.269664590569488 32.259351903562816 0.04884570279165548 1422
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-22-28.avi
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - Code time 57.20010280609131
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - Model predict fps:  31.780330222541277
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - 41.18079605938456 1.2954644092285912 50.62427626367796 0.04636461762712529 1393
+[2022-02-12 04:03:23,162] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-29-01.avi
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - Code time 58.81403064727783
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - Model predict fps:  31.075660242683796
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - 46.84845848291994 1.2759010021819164 52.20065852853255 0.03389251851672745 1401
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-35-35.avi
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - Code time 58.05148696899414
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - Model predict fps:  31.78220640569395
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - 79.20898789791742 1.259953949940411 71.46399228701888 0.06050027454033691 1405
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-42-08.avi
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - Code time 65.13370490074158
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - Model predict fps:  27.62759113652609
+[2022-02-12 04:03:23,163] {subprocess.py:89} INFO - 78.86685991464583 1.3146046151883646 74.7369737086792 0.039845283237549066 1399
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-48-41.avi
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - Code time 63.73516297340393
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - Model predict fps:  28.816067653276956
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - 50.36946044390003 1.3327805366806165 55.45639179363692 0.03252265215319982 1419
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/16-55-14.avi
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - Code time 63.74505424499512
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - Model predict fps:  27.940879596250902
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - 44.28637965502021 1.2917878767810131 50.41740850477079 0.05215745269052937 1387
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-01-47.avi
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - Code time 68.85978746414185
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - Model predict fps:  26.075725406935597
+[2022-02-12 04:03:23,164] {subprocess.py:89} INFO - 33.51544132576736 1.326828813248781 37.596358836152476 0.027814823667091024 1413
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-08-20.avi
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - Code time 70.52144026756287
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - Model predict fps:  25.49470712773465
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - 33.83063345214997 1.3618769419658576 38.424110914625516 0.024333264847602128 1417
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-14-53.avi
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - Code time 70.16512680053711
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - Model predict fps:  25.325249643366618
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - 33.84595194401078 1.4103039719616723 38.32914512964128 0.033572333618467 1402
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-21-26.avi
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:03:23,165] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - Code time 73.02892708778381
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - Model predict fps:  24.22491103202847
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - 27.34554124397849 1.3998732925474486 29.831037696172164 0.02551837450266116 1405
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-27-59.avi
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - Code time 73.21776556968689
+[2022-02-12 04:03:23,166] {subprocess.py:89} INFO - Model predict fps:  24.2425320056899
+[2022-02-12 04:35:22,182] {subprocess.py:89} INFO - 31.34725098371504 1.3734456108408435 31.436707539081834 0.029520287641793343 1406
+[2022-02-12 04:35:22,189] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-34-33.avi
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - Code time 73.36565065383911
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - Model predict fps:  24.293992932862192
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - 32.703662386617154 1.3258897433429766 34.515165141861935 0.037502622590329535 1415
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-41-06.avi
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - Code time 74.7758252620697
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - Model predict fps:  23.568263045032165
+[2022-02-12 04:35:22,190] {subprocess.py:89} INFO - 39.813335755027495 1.392321226770141 43.78035462851689 0.029396984397912218 1399
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-47-39.avi
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - Code time 75.69126844406128
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - Model predict fps:  23.332150461320087
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - 35.50499449158719 1.3950978860015681 39.5666490538014 0.028863710475631677 1409
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi7/17-54-12.avi
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - Code time 74.5452663898468
+[2022-02-12 04:35:22,191] {subprocess.py:89} INFO - Model predict fps:  23.567335243553007
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - 31.609074615517496 1.3627144181095645 36.81126589081332 0.02651123454296204 1396
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - rpi9
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - 2nd Connect success!
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-00-02.avi
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - Code time 70.7939567565918
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - Model predict fps:  25.62825017568517
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - 45.02250840900235 1.3101809208803468 42.74944731808087 0.03925999832896293 1423
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-06-35.avi
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,192] {subprocess.py:89} INFO - Code time 72.17060852050781
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - Model predict fps:  25.133984647592463
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - 42.747081209276004 1.3181039316085432 43.08747655504805 0.04194657006926792 1433
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-13-08.avi
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - Code time 72.12064385414124
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - Model predict fps:  25.232167832167832
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - 41.43479689020049 1.3189954545107894 39.986716390007544 0.0377497312222673 1430
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-19-41.avi
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - Code time 72.3247799873352
+[2022-02-12 04:35:22,193] {subprocess.py:89} INFO - Model predict fps:  25.277893277893277
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - 51.09719330285084 1.3572887145234458 48.35764968344015 0.04146220890806691 1443
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-26-14.avi
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - Code time 71.00380992889404
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - Model predict fps:  25.394644115574348
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - 56.1928603210507 1.3772362419410242 49.10765127702457 0.043027334147916735 1419
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-32-47.avi
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - [INFO] 1799 total frames in video
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - Code time 71.39807391166687
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - Model predict fps:  25.545708304256802
+[2022-02-12 04:35:22,194] {subprocess.py:89} INFO - 47.981710318505534 1.387772588385 50.84072775019256 0.03502129354715621 1433
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-39-20.avi
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - Code time 69.79392576217651
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - Model predict fps:  26.381881533101044
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - 73.01693399765794 1.3837211295695593 61.07099486031126 0.04760547786590883 1435
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-45-53.avi
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - Code time 67.31881308555603
+[2022-02-12 04:35:22,195] {subprocess.py:89} INFO - Model predict fps:  28.130075705437026
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 76.60705386832824 1.3423343105624443 63.26927043485011 0.05186728520266612 1453
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-52-26.avi
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Code time 73.05561995506287
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Model predict fps:  24.941707147814018
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 63.47850835741479 1.350604561346935 59.96565044804784 0.03579029527989012 1441
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/06-59-00.avi
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Code time 66.35602879524231
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Model predict fps:  28.039693593314762
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 74.7718956543701 1.3551931996532425 65.53989454274742 0.04251309323726624 1436
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-05-33.avi
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Code time 57.372288942337036
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Model predict fps:  33.02103786816269
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 81.0056224647952 1.3212918934233895 66.05895780171481 0.053197133655660866 1426
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-12-06.avi
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Code time 66.3694634437561
+[2022-02-12 04:35:22,196] {subprocess.py:89} INFO - Model predict fps:  27.838912133891213
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 80.58166405864127 1.3600622036894277 61.40940241479599 0.03813997989015024 1434
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-18-39.avi
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Code time 71.45982336997986
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Model predict fps:  25.449477351916375
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 59.96592368850559 1.383093417604819 57.088621895271956 0.04030489509207632 1435
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-25-12.avi
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Code time 70.28720474243164
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Model predict fps:  25.89223233030091
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 55.98484054915602 1.361087622128444 54.43276827549053 0.03406601058139486 1429
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-31-45.avi
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Code time 70.09493565559387
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Model predict fps:  26.779300891021247
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 68.91395509349425 1.3746459301518956 56.57638525557101 0.04253575238215832 1459
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-38-18.avi
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Code time 69.17541265487671
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - Model predict fps:  26.70498614958449
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 65.46053426929464 1.3719817162609484 61.073922072152435 0.03892680654553171 1444
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,197] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-44-51.avi
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Code time 71.66295313835144
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Model predict fps:  25.44825174825175
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 73.1697428927017 1.3811599623111046 64.52409124511078 0.038607482420491356 1430
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-51-24.avi
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Code time 71.67695641517639
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Model predict fps:  25.85783298826777
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 73.6078276748822 1.349747222290651 62.04329628046265 0.05536322550075284 1449
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/07-57-57.avi
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Code time 72.9232828617096
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Model predict fps:  24.85292047853624
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 65.10164510012468 1.3653518698590843 58.41794585154815 0.04333859252680179 1421
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/08-04-30.avi
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Code time 71.79586100578308
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - Model predict fps:  25.410327983251918
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 71.23702724084626 1.3732115449075872 62.33019663265621 0.043168183912297126 1433
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/08-11-03.avi
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,198] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - Code time 78.31171536445618
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - Model predict fps:  23.22560553633218
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - 116.99723235534996 1.3805478826952176 70.38123315949358 0.04743963987882462 1445
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/08-17-37.avi
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - Code time 66.92707419395447
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - Model predict fps:  27.76896551724138
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - 54.27287877314028 1.3510057467076588 49.5536277261074 0.03650787288498514 1450
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - [INFO] Running /workspace/nas-data/Animal/chicken_video/20220211/rpi9/08-24-10.avi
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - [INFO] 1800 total frames in video
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - resolution:  3.48
+[2022-02-12 04:35:22,199] {subprocess.py:89} INFO - Code time 74.99342584609985

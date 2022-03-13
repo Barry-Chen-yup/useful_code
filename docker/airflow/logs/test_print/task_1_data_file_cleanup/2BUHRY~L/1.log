@@ -1,0 +1,930 @@
+[2022-02-08 03:17:55,205] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.task_1_data_file_cleanup manual__2022-02-08T03:17:45.335318+00:00 [queued]>
+[2022-02-08 03:17:55,443] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.task_1_data_file_cleanup manual__2022-02-08T03:17:45.335318+00:00 [queued]>
+[2022-02-08 03:17:55,443] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 03:17:55,444] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-08 03:17:55,444] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 03:17:55,725] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): task_1_data_file_cleanup> on 2022-02-08 03:17:45.335318+00:00
+[2022-02-08 03:17:55,730] {standard_task_runner.py:52} INFO - Started process 21835 to run task
+[2022-02-08 03:17:55,734] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'test_print', 'task_1_data_file_cleanup', 'manual__2022-02-08T03:17:45.335318+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp7y0skvcm', '--error-file', '/tmp/tmp5lsov2y_']
+[2022-02-08 03:17:55,735] {standard_task_runner.py:77} INFO - Job 28: Subtask task_1_data_file_cleanup
+[2022-02-08 03:17:56,625] {logging_mixin.py:109} INFO - Running <TaskInstance: test_print.task_1_data_file_cleanup manual__2022-02-08T03:17:45.335318+00:00 [running]> on host workspace-1-v1-5d989644d9-ns2w7
+[2022-02-08 03:17:57,330] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:17:57,497] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:17:57,903] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2022-02-08 03:17:57,920] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:159 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:17:58,081] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=akj00173@gmail.com
+AIRFLOW_CTX_DAG_OWNER=someone
+AIRFLOW_CTX_DAG_ID=test_print
+AIRFLOW_CTX_TASK_ID=task_1_data_file_cleanup
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-08T03:17:45.335318+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-08T03:17:45.335318+00:00
+[2022-02-08 03:17:58,083] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-08 03:17:58,083] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'python3 /workspace/tracker/code/track_chicken_test.py "/workspace/nas-data/Animal/chicken_video/"$(date -d "yesterday" +%Y%m%d)']
+[2022-02-08 03:17:58,115] {subprocess.py:85} INFO - Output:
+[2022-02-08 03:18:03,084] {subprocess.py:89} INFO - [INFO] loading YOLO from disk...
+[2022-02-08 03:18:03,090] {subprocess.py:89} INFO - v 20220207
+[2022-02-08 03:18:03,090] {subprocess.py:89} INFO - First Connect fail!
+[2022-02-08 03:18:03,090] {subprocess.py:89} INFO - First Connect success!
+[2022-02-08 03:18:03,090] {subprocess.py:89} INFO - rpi5
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - 2nd Connect success!
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - rpi7
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - 2nd Connect success!
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - rpi9
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - 2nd Connect success!
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - rpi10
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - 2nd Connect success!
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - rpi5
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-00-02.avi
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-06-35.avi
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,091] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-13-08.avi
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-19-41.avi
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-26-15.avi
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-32-48.avi
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-39-21.avi
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-45-54.avi
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-52-27.avi
+[2022-02-08 03:18:03,092] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/06-59-00.avi
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-05-33.avi
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-12-06.avi
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-18-39.avi
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-25-12.avi
+[2022-02-08 03:18:03,093] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-31-45.avi
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-38-19.avi
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-44-52.avi
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-51-25.avi
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/07-57-58.avi
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,094] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-04-31.avi
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-11-04.avi
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-17-37.avi
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-24-10.avi
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-30-43.avi
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-37-17.avi
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-43-50.avi
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,095] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-50-23.avi
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/08-56-56.avi
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-03-29.avi
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-10-02.avi
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-16-35.avi
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-23-08.avi
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-29-41.avi
+[2022-02-08 03:18:03,096] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-36-14.avi
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-42-47.avi
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-49-20.avi
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/09-55-53.avi
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-02-26.avi
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-08-59.avi
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,097] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-15-32.avi
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-22-06.avi
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-28-39.avi
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-35-12.avi
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-41-45.avi
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-48-18.avi
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,098] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/10-54-51.avi
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-01-24.avi
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-07-57.avi
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-14-30.avi
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-21-03.avi
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-27-36.avi
+[2022-02-08 03:18:03,099] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-34-09.avi
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-40-42.avi
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-47-16.avi
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/11-53-49.avi
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-00-22.avi
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-06-55.avi
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-13-28.avi
+[2022-02-08 03:18:03,100] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-20-01.avi
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-26-34.avi
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-33-07.avi
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-39-40.avi
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-46-13.avi
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-52-46.avi
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,101] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/12-59-19.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-05-52.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-12-25.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-18-59.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-25-32.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-32-05.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-38-38.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-45-11.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-51-44.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/13-58-17.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-04-50.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-11-23.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-17-56.avi
+[2022-02-08 03:18:03,102] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-24-29.avi
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-31-02.avi
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-37-36.avi
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-44-09.avi
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-50-42.avi
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/14-57-15.avi
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-03-48.avi
+[2022-02-08 03:18:03,103] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-10-21.avi
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-16-54.avi
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-23-27.avi
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-30-00.avi
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-36-33.avi
+[2022-02-08 03:18:05,486] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-43-06.avi
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-49-39.avi
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/15-56-12.avi
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-02-46.avi
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-09-19.avi
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-15-52.avi
+[2022-02-08 03:18:05,487] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-22-25.avi
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-28-58.avi
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-35-31.avi
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-42-04.avi
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-48-37.avi
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/16-55-10.avi
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,488] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-01-44.avi
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-08-17.avi
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-14-50.avi
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-21-23.avi
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-27-56.avi
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-34-29.avi
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,489] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-41-02.avi
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-47-35.avi
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi5/17-54-08.avi
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - rpi7
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-00-02.avi
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-06-35.avi
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-13-08.avi
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-19-41.avi
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,490] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-26-15.avi
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-32-48.avi
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-39-21.avi
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-45-54.avi
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-52-27.avi
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/06-59-00.avi
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-05-33.avi
+[2022-02-08 03:18:05,491] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-12-06.avi
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-18-39.avi
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-25-12.avi
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-31-45.avi
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-38-19.avi
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-44-52.avi
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-51-25.avi
+[2022-02-08 03:18:05,492] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/07-57-58.avi
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-04-31.avi
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-11-04.avi
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-17-37.avi
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-24-10.avi
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-30-43.avi
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,493] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-37-17.avi
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-43-50.avi
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-50-23.avi
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/08-56-56.avi
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-03-29.avi
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-10-02.avi
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-16-35.avi
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,494] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-23-08.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-29-41.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-36-15.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-42-48.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-49-21.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/09-55-54.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-02-27.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-09-00.avi
+[2022-02-08 03:18:05,495] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-15-33.avi
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-22-06.avi
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-28-39.avi
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-35-12.avi
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-41-46.avi
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-48-19.avi
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/10-54-52.avi
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,496] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-01-25.avi
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-07-58.avi
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-14-31.avi
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-21-04.avi
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-27-37.avi
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-34-10.avi
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-40-43.avi
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,497] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-47-16.avi
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/11-53-50.avi
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-00-23.avi
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-06-56.avi
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-13-29.avi
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-20-02.avi
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-26-35.avi
+[2022-02-08 03:18:05,498] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,752] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-33-08.avi
+[2022-02-08 03:18:07,752] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,752] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-39-41.avi
+[2022-02-08 03:18:07,752] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,752] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-46-14.avi
+[2022-02-08 03:18:07,752] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-52-47.avi
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/12-59-21.avi
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-05-54.avi
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-12-27.avi
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-19-00.avi
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,753] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-25-33.avi
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-32-06.avi
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-38-39.avi
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-45-12.avi
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-51-45.avi
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/13-58-19.avi
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,754] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-04-52.avi
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-11-25.avi
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-17-58.avi
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-24-31.avi
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-31-04.avi
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-37-37.avi
+[2022-02-08 03:18:07,755] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-44-10.avi
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-50-43.avi
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/14-57-17.avi
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-03-50.avi
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-10-23.avi
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-16-56.avi
+[2022-02-08 03:18:07,756] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-23-29.avi
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-30-02.avi
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-36-35.avi
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-43-08.avi
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-49-41.avi
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,757] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/15-56-15.avi
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-02-48.avi
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-09-21.avi
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-15-54.avi
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-22-27.avi
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-29-00.avi
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-35-33.avi
+[2022-02-08 03:18:07,758] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-42-06.avi
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-48-39.avi
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/16-55-12.avi
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-01-46.avi
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-08-19.avi
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-14-52.avi
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-21-25.avi
+[2022-02-08 03:18:07,759] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-27-58.avi
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-34-31.avi
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-41-04.avi
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-47-37.avi
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi7/17-54-10.avi
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - rpi9
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-00-02.avi
+[2022-02-08 03:18:07,760] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-06-35.avi
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-13-09.avi
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-19-42.avi
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-26-15.avi
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-32-48.avi
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-39-21.avi
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-45-54.avi
+[2022-02-08 03:18:07,761] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-52-27.avi
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/06-59-00.avi
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-05-33.avi
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-12-06.avi
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-18-40.avi
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-25-13.avi
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,762] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-31-46.avi
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-38-19.avi
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-44-52.avi
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-51-25.avi
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/07-57-58.avi
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-04-31.avi
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-11-04.avi
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,763] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-17-37.avi
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-24-11.avi
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-30-44.avi
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-37-17.avi
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-43-50.avi
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-50-23.avi
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/08-56-56.avi
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,764] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-03-29.avi
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-10-02.avi
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-16-35.avi
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-23-08.avi
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-29-41.avi
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-36-14.avi
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-42-48.avi
+[2022-02-08 03:18:07,765] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:07,766] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-49-21.avi
+[2022-02-08 03:18:07,766] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,044] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/09-55-54.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-02-27.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-09-00.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-15-33.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-22-06.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-28-39.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-35-12.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-41-45.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-48-18.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/10-54-52.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-01-25.avi
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,050] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-07-58.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-14-31.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-21-04.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-27-37.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-34-10.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-40-44.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-47-17.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/11-53-50.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-00-23.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-06-56.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-13-29.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-20-02.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-26-35.avi
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,051] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-33-08.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-39-41.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-46-15.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-52-48.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/12-59-21.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-05-54.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-12-27.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-19-00.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-25-33.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-32-06.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-38-39.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-45-12.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-51-46.avi
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,052] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/13-58-19.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-04-52.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-11-25.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-17-58.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-24-31.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-31-04.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-37-37.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-44-10.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-50-43.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/14-57-17.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-03-50.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-10-23.avi
+[2022-02-08 03:18:10,053] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-16-56.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-23-29.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-30-02.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-36-35.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-43-08.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-49-41.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/15-56-14.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-02-47.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-09-21.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-15-54.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-22-27.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-29-00.avi
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,054] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-35-33.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-42-06.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-48-39.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/16-55-12.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-01-45.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-08-18.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-14-51.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-21-24.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-27-58.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-34-31.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-41-04.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-47-37.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi9/17-54-10.avi
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,055] {subprocess.py:89} INFO - rpi10
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-00-02.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-06-35.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-13-09.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-19-42.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-26-15.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-32-48.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-39-21.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-45-54.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-52-27.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/06-59-00.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-05-33.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-12-06.avi
+[2022-02-08 03:18:10,056] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-18-39.avi
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-25-13.avi
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-31-46.avi
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-38-19.avi
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-44-52.avi
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,308] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-51-25.avi
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/07-57-58.avi
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-04-31.avi
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-11-04.avi
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-17-37.avi
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-24-10.avi
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,309] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-30-44.avi
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-37-17.avi
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-43-50.avi
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-50-23.avi
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/08-56-56.avi
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-03-29.avi
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-10-02.avi
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,310] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-16-35.avi
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-23-08.avi
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-29-41.avi
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-36-14.avi
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-42-47.avi
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-49-21.avi
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/09-55-54.avi
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,311] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-02-27.avi
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-09-00.avi
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-15-33.avi
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-22-06.avi
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-28-39.avi
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-35-12.avi
+[2022-02-08 03:18:12,312] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-41-45.avi
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-48-18.avi
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/10-54-51.avi
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-01-24.avi
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-07-58.avi
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-14-31.avi
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,313] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-21-04.avi
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-27-37.avi
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-34-10.avi
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-40-43.avi
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-47-16.avi
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/11-53-49.avi
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-00-22.avi
+[2022-02-08 03:18:12,314] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-06-55.avi
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-13-28.avi
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-20-01.avi
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-26-35.avi
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-33-08.avi
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-39-41.avi
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,315] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-46-14.avi
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-52-47.avi
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/12-59-20.avi
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-05-53.avi
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-12-26.avi
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-18-59.avi
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-25-32.avi
+[2022-02-08 03:18:12,316] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-32-05.avi
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-38-38.avi
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-45-12.avi
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-51-45.avi
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/13-58-18.avi
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-04-51.avi
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,317] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-11-24.avi
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-17-57.avi
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-24-30.avi
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-31-03.avi
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-37-36.avi
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-44-09.avi
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-50-42.avi
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,318] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/14-57-15.avi
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-03-49.avi
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-10-22.avi
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-16-55.avi
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-23-28.avi
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-30-01.avi
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-36-34.avi
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,319] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-43-07.avi
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-49-40.avi
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/15-56-13.avi
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-02-46.avi
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-09-19.avi
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-15-52.avi
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-22-25.avi
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,320] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-28-59.avi
+[2022-02-08 03:18:12,321] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-35-32.avi
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-42-05.avi
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-48-38.avi
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/16-55-11.avi
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-01-44.avi
+[2022-02-08 03:18:12,657] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-08-17.avi
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-14-50.avi
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-21-23.avi
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-27-56.avi
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-34-29.avi
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-41-02.avi
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-47-35.avi
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:12,658] {subprocess.py:89} INFO - video /workspace/nas-data/Animal/chicken_video/20220207/rpi10/17-54-09.avi
+[2022-02-08 03:18:12,659] {subprocess.py:89} INFO - 3rd Connect success!
+[2022-02-08 03:18:13,333] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-02-08 03:18:13,356] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/xcom.py:103 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:18:13,781] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=test_print, task_id=task_1_data_file_cleanup, execution_date=20220208T031745, start_date=20220208T031755, end_date=20220208T031813
+[2022-02-08 03:18:14,063] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-08 03:18:14,638] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-08 03:18:14,641] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2022-02-08 03:18:14,643] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)

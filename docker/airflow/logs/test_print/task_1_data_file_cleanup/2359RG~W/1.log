@@ -1,0 +1,89 @@
+[2022-02-08 03:19:45,236] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.task_1_data_file_cleanup manual__2022-02-08T03:19:38.055974+00:00 [queued]>
+[2022-02-08 03:19:45,479] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: test_print.task_1_data_file_cleanup manual__2022-02-08T03:19:38.055974+00:00 [queued]>
+[2022-02-08 03:19:45,479] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 03:19:45,479] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-08 03:19:45,479] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-08 03:19:45,773] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): task_1_data_file_cleanup> on 2022-02-08 03:19:38.055974+00:00
+[2022-02-08 03:19:45,778] {standard_task_runner.py:52} INFO - Started process 22008 to run task
+[2022-02-08 03:19:45,784] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'test_print', 'task_1_data_file_cleanup', 'manual__2022-02-08T03:19:38.055974+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp65gu0t_e', '--error-file', '/tmp/tmpjicpspoa']
+[2022-02-08 03:19:45,785] {standard_task_runner.py:77} INFO - Job 30: Subtask task_1_data_file_cleanup
+[2022-02-08 03:19:46,708] {logging_mixin.py:109} INFO - Running <TaskInstance: test_print.task_1_data_file_cleanup manual__2022-02-08T03:19:38.055974+00:00 [running]> on host workspace-1-v1-5d989644d9-ns2w7
+[2022-02-08 03:19:47,422] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/xcom.py:323 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:19:47,571] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:126 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:19:47,886] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:162 SAWarning: Coercing Subquery object into a select() for use in IN(); please pass a select() construct explicitly
+[2022-02-08 03:19:47,906] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/renderedtifields.py:159 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:19:48,221] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=akj00173@gmail.com
+AIRFLOW_CTX_DAG_OWNER=someone
+AIRFLOW_CTX_DAG_ID=test_print
+AIRFLOW_CTX_TASK_ID=task_1_data_file_cleanup
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-08T03:19:38.055974+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-08T03:19:38.055974+00:00
+[2022-02-08 03:19:48,222] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-08 03:19:48,223] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'python3 /workspace/tracker/code/track_chicken_date_gpu.py "/workspace/nas-data/Animal/chicken_video/"$(date -d "yesterday" +%Y%m%d)']
+[2022-02-08 03:19:48,255] {subprocess.py:85} INFO - Output:
+[2022-02-08 03:19:50,602] {subprocess.py:89} INFO - Traceback (most recent call last):
+[2022-02-08 03:19:50,602] {subprocess.py:89} INFO -   File "/workspace/tracker/code/track_chicken_date_gpu.py", line 94, in <module>
+[2022-02-08 03:19:50,602] {subprocess.py:89} INFO -     LABELS = open(labelsPath).read().strip().split("\n")
+[2022-02-08 03:19:50,602] {subprocess.py:89} INFO - FileNotFoundError: [Errno 2] No such file or directory: './yolo/coco.names'
+[2022-02-08 03:19:51,219] {subprocess.py:93} INFO - Command exited with return code 1
+[2022-02-08 03:19:51,377] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/bash.py", line 187, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-02-08 03:19:51,440] {taskinstance.py:1267} INFO - Marking task as UP_FOR_RETRY. dag_id=test_print, task_id=task_1_data_file_cleanup, execution_date=20220208T031938, start_date=20220208T031945, end_date=20220208T031951
+[2022-02-08 03:19:51,445] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dagrun.py:466 SAWarning: TypeDecorator UtcDateTime(timezone=True) will not produce a cache key because the ``cache_ok`` flag is not set to True.  Set this flag to True if this type object's state is safe to use in a cache key, or False to disable this warning.
+[2022-02-08 03:19:51,610] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-02-08 03:19:51,611] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-02-08 03:19:51,613] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-02-08 03:19:51,614] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-02-08 03:19:51,615] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-08 03:19:51,617] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-08 03:19:51,618] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-02-08 03:19:51,619] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-02-08 03:19:51,621] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-08 03:19:51,622] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-08 03:19:51,622] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-02-08 03:19:51,623] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-02-08 03:19:51,701] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/utils/email.py:102 PendingDeprecationWarning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2022-02-08 03:19:51,701] {email.py:208} INFO - Email alerting: attempt 1
+[2022-02-08 03:19:52,316] {email.py:220} INFO - Sent an alert email to ['akj00173@gmail.com']
+[2022-02-08 03:19:53,783] {standard_task_runner.py:89} ERROR - Failed to execute job 30 for task task_1_data_file_cleanup
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/conda/lib/python3.8/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/bash.py", line 187, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-02-08 03:19:53,803] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-02-08 03:19:54,476] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-02-08 03:19:54,478] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.value() is deprecated and will be removed in a future release.  Please use Query.with_entities() in combination with Query.scalar() (deprecated since: 1.4)
+[2022-02-08 03:19:54,479] {logging_mixin.py:109} WARNING - /opt/conda/lib/python3.8/site-packages/airflow/models/dag.py:1076 SADeprecationWarning: Query.values() is deprecated and will be removed in a future release.  Please use Query.with_entities() (deprecated since: 1.4)
